@@ -1,18 +1,20 @@
 <package>
-
   <name>sawyer_moveit_config</name>
-  <version>0.2.0</version>
+  <version>5.0.0</version>
   <description>
-     An automatically generated package with all the configuration and launch files for using the sawyer with the MoveIt Motion Planning Framework
+     All the configuration and launch files for using the Sawyer
+     robot with the MoveIt Motion Planning Framework
   </description>
-  <author email="assistant@moveit.ros.org">MoveIt Setup Assistant</author>
-  <maintainer email="assistant@moveit.ros.org">MoveIt Setup Assistant</maintainer>
 
-  <license>BSD</license>
+ <author>Ian McMahon</author>
+ <maintainer email="rsdk.support@rethinkrobotics.com">
+    Rethink Robotics Inc. </maintainer>
 
-  <url type="website">http://moveit.ros.org/</url>
-  <url type="bugtracker">https://github.com/ros-planning/moveit_setup_assistant/issues</url>
-  <url type="repository">https://github.com/ros-planning/moveit_setup_assistant</url>
+  <license>Apache 2.0</license>
+
+  <url type="website">http://sdk.rethinkrobotics.com/</url>
+  <url type="bugtracker">https://github.com/RethinkRobotics/sawyer_moveit/issues</url>
+  <url type="repository">https://github.com/RethinkRobotics/sawyer_moveit</url>
 
   <run_depend>moveit_ros_move_group</run_depend>
   <run_depend>moveit_planners_ompl</run_depend>
