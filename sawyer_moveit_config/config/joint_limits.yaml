@@ -1,36 +1,120 @@
 joint_limits:
   right_j0:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 0.75
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.37
+    max_acceleration: 1.5
+    ##          Medium Max           ##
+    #max_velocity: 0.88
+    #max_acceleration: 3.5
+    ##           Fast Max            ##
+    #max_velocity: 1.48
+    #max_acceleration: 7
+    ##          Express Max          ##
+    #max_velocity: 1.48
+    #max_acceleration: 10.0
   right_j1:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 0.75
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.2825
+    max_acceleration: 1.5
+    ##          Medium Max           ##
+    #max_velocity: 0.678
+    #max_acceleration: 2.5
+    ##           Fast Max            ##
+    #max_velocity: 1.13
+    #max_acceleration: 5
+    ##          Express Max          ##
+    #max_velocity: 1.13
+    #max_acceleration: 8.0
   right_j2:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 0.75
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.415
+    max_acceleration: 3.0
+    ##          Medium Max           ##
+    #max_velocity: 0.996
+    #max_acceleration: 5.0
+    ##           Fast Max            ##
+    #max_velocity: 1.66
+    #max_acceleration: 8
+    ##          Express Max          ##
+    #max_velocity: 1.66
+    #max_acceleration: 10.0
   right_j3:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 0.75
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.415
+    max_acceleration: 3.0
+    ##          Medium Max           ##
+    #max_velocity: 0.996
+    #max_acceleration: 5.0
+    ##           Fast Max            ##
+    #max_velocity: 1.66
+    #max_acceleration: 8
+    ##          Express Max          ##
+    #max_velocity: 1.66
+    #max_acceleration: 10.0
   right_j4:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 1.0
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.74
+    max_acceleration: 3.0
+    ##          Medium Max           ##
+    #max_velocity: 1.776
+    #max_acceleration: 5.0
+    ##           Fast Max            ##
+    #max_velocity: 2.96
+    #max_acceleration: 8
+    ##          Express Max          ##
+    #max_velocity: 2.96
+    #max_acceleration: 12.0
   right_j5:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 1.0
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.74
+    max_acceleration: 3.0
+    ##          Medium Max           ##
+    #max_velocity: 1.776
+    #max_acceleration: 5.0
+    ##           Fast Max            ##
+    #max_velocity: 2.96
+    #max_acceleration: 8
+    ##          Express Max          ##
+    #max_velocity: 2.96
+    #max_acceleration: 12.0
   right_j6:
+    ##    Velocity Limits (rad/s)    ##
     has_velocity_limits: true
-    max_velocity: 1.0
+    ## Acceleration Limits (rad/s^2) ##
     has_acceleration_limits: true
-    max_acceleration: 2.0
+    ##           Slow Max            ##
+    max_velocity: 0.965
+    max_acceleration: 3.0
+    ##          Medium Max           ##
+    #max_velocity: 2.316
+    #max_acceleration: 5.0
+    ##           Fast Max            ##
+    #max_velocity: 3.86
+    #max_acceleration: 8
+    ##          Express Max          ##
+    #max_velocity: 3.86
+    #max_acceleration: 12.0
