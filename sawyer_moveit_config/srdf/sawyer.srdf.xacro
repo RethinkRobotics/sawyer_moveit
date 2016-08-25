@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<robot name="sawyer" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <xacro:arg name="tip_name" default="right_gripper"/>
+  <xacro:include filename="$(find sawyer_moveit_config)/srdf/sawyer_base.srdf.xacro" />
+  <xacro:sawyer_base tip_name="$(arg tip_name)"/>
+  <!--Right End Effector Collisions-->
+  <xacro:arg name="electric_gripper" default="false"/>
+  <xacro:if value="$(arg electric_gripper)">
+    <xacro:include filename="$(find sawyer_moveit_config)/srdf/rethink_electric_gripper.srdf.xacro" />
+    <xacro:rethink_electric_gripper side="right"/>
+  </xacro:if>
+</robot>
