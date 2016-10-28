@@ -10,6 +10,8 @@
 
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
+  <!-- Add controller box collision shape to check for link collisions if set to true-->
+  <arg name="controller_box" default="true"/>
   <!-- Left and electric gripper arg. Set to true to check for collisions for their links -->
   <arg name="electric_gripper" default="false"/>
   <!-- Set the kinematic tip for the right_arm move_group -->
@@ -20,6 +22,7 @@
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
     <arg name="electric_gripper" value="$(arg electric_gripper)"/>
     <arg name="tip_name" value="$(arg tip_name)"/>
+    <arg name="controller_box" value="$(arg controller_box)"/>
   </include>
 
   <arg name="kinect" default="false" />
