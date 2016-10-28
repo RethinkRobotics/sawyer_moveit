@@ -4,6 +4,9 @@
   <arg name="electric_gripper" default="false"/>
   <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
   <arg name="tip_name" default="right_hand"/>
+  <!-- Add controller box collision shape to check for link collisions if set to true-->
+  <arg name="controller_box" default="true"/>
+
 
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
@@ -18,7 +21,8 @@
   <param name="robot_description_semantic"
       command="$(find xacro)/xacro.py --inorder $(find sawyer_moveit_config)/srdf/sawyer.srdf.xacro
           electric_gripper:=$(arg electric_gripper)
-          tip_name:=$(arg tip_name)"/>
+          tip_name:=$(arg tip_name)
+          controller_box:=$(arg controller_box)"/>
   
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
