@@ -19,7 +19,7 @@
 
   <!-- The semantic description that corresponds to the URDF -->
   <param name="robot_description_semantic"
-      command="$(find xacro)/xacro.py --inorder $(find sawyer_moveit_config)/srdf/sawyer.srdf.xacro
+      command="$(find xacro)/xacro --inorder $(find sawyer_moveit_config)/srdf/sawyer.srdf.xacro
           electric_gripper:=$(arg electric_gripper)
           tip_name:=$(arg tip_name)
           controller_box:=$(arg controller_box)"/>
