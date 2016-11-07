@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='ASCII'?>
 <package>
   <name>sawyer_ikfast_plugin</name>
-  <version>5.0.0</version>
+  <version>5.0.4</version>
   <description>The sawyer_ikfast_plugin package</description>
 
 
