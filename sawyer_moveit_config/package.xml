@@ -12,7 +12,7 @@
 
   <license>BSD</license>
 
-  <url type="website">http://sdk.rethinkrobotics.com/</url>
+  <url type="website">http://sdk.rethinkrobotics.com/intera/</url>
   <url type="bugtracker">https://github.com/RethinkRobotics/sawyer_moveit/issues</url>
   <url type="repository">https://github.com/RethinkRobotics/sawyer_moveit</url>
 
