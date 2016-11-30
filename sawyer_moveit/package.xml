@@ -23,7 +23,6 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>sawyer_moveit_config</run_depend>
-  <run_depend>sawyer_ikfast_plugin</run_depend>
   
   <export>
     <metapackage/>
