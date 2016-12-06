@@ -1,0 +1,10 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: sawyer_description
+    relative_path: urdf/sawyer.urdf
+  SRDF:
+    relative_path: srdf/sawyer.srdf.xacro
+  CONFIG:
+    author_name: Rethink Robotics Inc.
+    author_email: rsdk.support@rethinkrobotics.com
+    generated_timestamp: 1478278031

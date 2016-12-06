@@ -1,6 +1,6 @@
 <package>
   <name>sawyer_moveit_config</name>
-  <version>5.0.0</version>
+  <version>5.0.4</version>
   <description>
      All the configuration and launch files for using the Sawyer
      robot with the MoveIt Motion Planning Framework
@@ -12,12 +12,13 @@
 
   <license>BSD</license>
 
-  <url type="website">http://sdk.rethinkrobotics.com/</url>
+  <url type="website">http://sdk.rethinkrobotics.com/intera/</url>
   <url type="bugtracker">https://github.com/RethinkRobotics/sawyer_moveit/issues</url>
   <url type="repository">https://github.com/RethinkRobotics/sawyer_moveit</url>
 
   <run_depend>moveit_ros_move_group</run_depend>
   <run_depend>moveit_planners_ompl</run_depend>
+  <run_depend>moveit_kinematics</run_depend>
   <run_depend>moveit_ros_visualization</run_depend>
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
@@ -26,6 +27,10 @@
   <run_depend>sawyer_description</run_depend>
 
 
+  <!-- This package is referenced in the warehouse launch files,
+       but does not build out of the box at the moment. Commented
+       the dependency until this works. -->
+  <!-- <run_depend>warehouse_ros_mongo</run_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
   
 </package>

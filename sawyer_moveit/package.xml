@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>sawyer_moveit</name>
-  <version>5.0.0</version>
+  <version>5.0.4</version>
   <description>
     sawyer_moveit metapackage containing all of the packages
     to operate the Sawyer robot in the MoveIt framework.
@@ -11,7 +11,7 @@
     Rethink Robotics Inc.
   </maintainer>
   <license>BSD</license>
-  <url type="website">http://sdk.rethinkrobotics.com/</url>
+  <url type="website">http://sdk.rethinkrobotics.com/intera/</url>
   <url type="repository">
     https://github.com/RethinkRobotics/sawyer_moveit
   </url>
@@ -23,7 +23,6 @@
   <buildtool_depend>catkin</buildtool_depend>
 
   <run_depend>sawyer_moveit_config</run_depend>
-  <run_depend>sawyer_ikfast_plugin</run_depend>
   
   <export>
     <metapackage/>

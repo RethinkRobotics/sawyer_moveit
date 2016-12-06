@@ -1,15 +1,28 @@
+<?xml version="1.0"?>
 <launch>
+  <!-- Right electric gripper param. Set to true to check for collisions for their links -->
+  <arg name="electric_gripper" default="false"/>
+  <!-- Set the kinematic tips for the left_arm and right_arm move_groups -->
+  <arg name="tip_name" default="right_hand"/>
+  <!-- Add controller box collision shape to check for link collisions if set to true-->
+  <arg name="controller_box" default="true"/>
+
+
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
   <arg name="load_robot_description" default="false"/>
 
   <!-- The name of the parameter under which the URDF is loaded -->
   <arg name="robot_description" default="robot_description"/>
 
-  <!-- Load universal robot description format (URDF) -->
+  <!-- Load universal robot description format (URDF) FIXME when composable URDF -->
   <param if="$(arg load_robot_description)" name="$(arg robot_description)" textfile="$(find sawyer_description)/urdf/sawyer.urdf"/>
 
   <!-- The semantic description that corresponds to the URDF -->
-  <param name="$(arg robot_description)_semantic" textfile="$(find sawyer_moveit_config)/config/sawyer.srdf" />
+  <param name="robot_description_semantic"
+      command="$(find xacro)/xacro --inorder $(find sawyer_moveit_config)/srdf/sawyer.srdf.xacro
+          electric_gripper:=$(arg electric_gripper)
+          tip_name:=$(arg tip_name)
+          controller_box:=$(arg controller_box)"/>
   
   <!-- Load updated joint limits (override information from URDF) -->
   <group ns="$(arg robot_description)_planning">
