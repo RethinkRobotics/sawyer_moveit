@@ -1,6 +1,6 @@
 <package>
   <name>sawyer_moveit_config</name>
-  <version>5.0.0</version>
+  <version>5.0.4</version>
   <description>
      All the configuration and launch files for using the Sawyer
      robot with the MoveIt Motion Planning Framework
@@ -12,7 +12,7 @@
 
   <license>BSD</license>
 
-  <url type="website">http://sdk.rethinkrobotics.com/</url>
+  <url type="website">http://sdk.rethinkrobotics.com/intera/</url>
   <url type="bugtracker">https://github.com/RethinkRobotics/sawyer_moveit/issues</url>
   <url type="repository">https://github.com/RethinkRobotics/sawyer_moveit</url>
 
