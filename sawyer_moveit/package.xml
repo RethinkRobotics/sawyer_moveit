@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
   <name>sawyer_moveit</name>
-  <version>5.0.4</version>
+  <version>5.1.0</version>
   <description>
     sawyer_moveit metapackage containing all of the packages
     to operate the Sawyer robot in the MoveIt framework.
