@@ -1,3 +1,8 @@
+5.1.0 (2017-3-27)
+---------------------------------
+- Moved to Apache 2.0 license
+- Added Contribution Guidelines
+
 5.0.4 (2016-12-06)
 ---------------------------------
 - Initial release of sawyer_moveit and sawyer_moveit_config packages
