@@ -20,13 +20,13 @@ Installation
 Code & Tickets
 --------------
 
-+-----------------+----------------------------------------------------------------+
-| Documentation   | http://sdk.rethinkrobotics.com/intera/                         |
-+-----------------+----------------------------------------------------------------+
-| Issues          | https://github.com/RethinkRobotics/sawyer_moveit/issues        |
-+-----------------+----------------------------------------------------------------+
-| Contributions   | http://sdk.rethinkrobotics.com/intera/Contributions            |
-+-----------------+----------------------------------------------------------------+
++-----------------+-------------------------------------------------------------------------------+
+| Documentation   | http://sdk.rethinkrobotics.com/intera/                                        |
++-----------------+-------------------------------------------------------------------------------+
+| Issues          | https://github.com/RethinkRobotics/sawyer_moveit/issues                       |
++-----------------+-------------------------------------------------------------------------------+
+| Contributions   | https://github.com/RethinkRobotics/sawyer_moveit/blob/master/CONTRIBUTING.md  |
++-----------------+-------------------------------------------------------------------------------+
 
 Sawyer Repository Overview
 --------------------------

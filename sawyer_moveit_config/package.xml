@@ -1,6 +1,6 @@
 <package>
   <name>sawyer_moveit_config</name>
-  <version>5.0.4</version>
+  <version>5.1.0</version>
   <description>
      All the configuration and launch files for using the Sawyer
      robot with the MoveIt Motion Planning Framework
