@@ -42,6 +42,42 @@
     <!--DISABLE COLLISIONS: By default it is assumed that any link of the robot
     could potentially come into collision with any other link in the robot.
     This tag disables collision checking between a specified pair of links. -->
+    <disable_collisions link1="pedestal" link2="right_l1_2" reason="Never" />
+    <disable_collisions link1="right_arm_base_link" link2="right_l1_2" reason="Never" />
+    <disable_collisions link1="right_arm_base_link" link2="right_l2_2" reason="Never" />
+    <disable_collisions link1="head" link2="right_l1_2" reason="Default" />
+    <disable_collisions link1="head" link2="right_l2_2" reason="Default" />
+    <disable_collisions link1="right_l0" link2="right_l1_2" reason="Adjacent" />
+    <disable_collisions link1="right_l0" link2="right_l2" reason="Never" />
+    <disable_collisions link1="right_l0" link2="right_l2_2" reason="Never" />
+    <disable_collisions link1="right_hand" link2="right_l2_2" reason="Never" />
+    <disable_collisions link1="right_hand" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l0" link2="right_l2_2" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="right_l2" reason="Adjacent" />
+    <disable_collisions link1="right_l1_2" link2="right_l2_2" reason="Adjacent" />
+    <disable_collisions link1="right_l1" link2="right_l2_2" reason="Adjacent" />
+    <disable_collisions link1="right_l1_2" link2="right_l3" reason="Never" />
+    <disable_collisions link1="right_l1" link2="right_l1_2" reason="Never" />
+    <disable_collisions link1="right_l2" link2="right_l2_2" reason="Never" />
+    <disable_collisions link1="right_l4" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l1" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="right_l4" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="right_l3" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="torso" reason="Never" />
+    <disable_collisions link1="right_l1_2" link2="screen" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="right_l3" reason="Adjacent" />
+    <disable_collisions link1="right_l2_2" link2="right_l4" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="right_l5" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="right_l6" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="screen" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="torso" reason="Never" />
+    <disable_collisions link1="right_l2" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l2_2" link2="right_l4_2" reason="Never" />
+    <disable_collisions link1="right_l4_2" link2="right_l6" reason="Never" />
+    <disable_collisions link1="right_l4_2" link2="right_l5" reason="Never" />
+    <disable_collisions link1="right_l4_2" link2="right_l3" reason="Never" />
+
     <disable_collisions link1="head" link2="pedestal" reason="Never" />
     <disable_collisions link1="head" link2="right_arm_base_link" reason="Never" />
     <disable_collisions link1="head" link2="right_l0" reason="Adjacent" />
@@ -63,11 +99,11 @@
     <disable_collisions link1="right_hand" link2="right_l5" reason="Never" />
     <disable_collisions link1="right_hand" link2="right_l6" reason="Adjacent" />
     <disable_collisions link1="right_l0" link2="right_l1" reason="Adjacent" />
-    <disable_collisions link1="right_l0" link2="right_l2" reason="Never" />
     <disable_collisions link1="right_l0" link2="right_l3" reason="Never" />
     <disable_collisions link1="right_l0" link2="screen" reason="Never" />
     <disable_collisions link1="right_l0" link2="torso" reason="Never" />
     <disable_collisions link1="right_l1" link2="right_l2" reason="Adjacent" />
+    <disable_collisions link1="right_l0" link2="right_l2" reason="Never" />
     <disable_collisions link1="right_l1" link2="right_l3" reason="Never" />
     <disable_collisions link1="right_l1" link2="right_l4" reason="Never" />
     <disable_collisions link1="right_l1" link2="screen" reason="Never" />
