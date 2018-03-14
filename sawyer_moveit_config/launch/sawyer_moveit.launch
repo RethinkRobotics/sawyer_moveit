@@ -15,7 +15,7 @@
   <!-- Left and electric gripper arg. Set to true to check for collisions for their links -->
   <arg name="electric_gripper" default="false"/>
   <!-- Set the kinematic tip for the right_arm move_group -->
-  <arg name="tip_name"     if="$(arg electric_gripper)" default="right_gripper"/>
+  <arg name="tip_name"     if="$(arg electric_gripper)" default="right_gripper_tip"/>
   <arg name="tip_name" unless="$(arg electric_gripper)" default="right_hand"/>
   <!-- Add planning context launch file -->
   <include file="$(find sawyer_moveit_config)/launch/planning_context.launch">
