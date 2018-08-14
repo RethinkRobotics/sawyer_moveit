@@ -1,3 +1,12 @@
+5.3.0 (2018-8-14)
+---------------------------------
+- No new changes for this repository
+
+5.2.0 (2018-4-16)
+---------------------------------
+- Modified xacro for gripper collision shapes 
+- Added extra self collision shapes for base robot description
+
 5.1.0 (2017-3-27)
 ---------------------------------
 - Moved to Apache 2.0 license
