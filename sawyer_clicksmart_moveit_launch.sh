@@ -10,12 +10,8 @@
 echo $(rostopic list | grep state | grep stp | cut -d'/' -f 4)
 device_name="$(rostopic list | grep state | grep stp | cut -d'/' -f 4)";
 echo ${device_name}
-# replace the device name 
-sed -i -e "s/stp_device_name/$device_name/g" ./sawyer_moveit_config/launch/sawyer_moveit.launch
-sed -i -e "s/stp_device_name/$device_name/g" ./sawyer_moveit_config/srdf/rethink_clicksmart_gripper.srdf.xacro
+
 # launch moveit
-$(roslaunch sawyer_moveit_config sawyer_moveit.launch clicksmart_gripper:=true) > clicksmartmoveit.log &
-# replace the device name back to default
-sed -i -e "s/$device_name/stp_device_name/g" ./sawyer_moveit_config/launch/sawyer_moveit.launch
-sed -i -e "s/$device_name/stp_device_name/g" ./sawyer_moveit_config/srdf/rethink_clicksmart_gripper.srdf.xacro
+roslaunch sawyer_moveit_config sawyer_moveit.launch clicksmart_gripper:=true tip_name:="${device_name}_tip" stp_device_name:="${device_name}"
+
 
