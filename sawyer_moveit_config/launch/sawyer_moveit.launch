@@ -14,13 +14,15 @@
   <arg name="controller_box" default="true"/>
   <!-- Left and electric gripper arg. Set to true to check for collisions for their links -->
   <arg name="electric_gripper" default="false"/>
+  <arg name="clicksmart_gripper" default="false"/>
   <!-- Set the kinematic tip for the right_arm move_group -->
   <arg name="tip_name"     if="$(arg electric_gripper)" default="right_gripper_tip"/>
-  <arg name="tip_name" unless="$(arg electric_gripper)" default="right_hand"/>
+  <arg name="tip_name"     if="$(arg clicksmart_gripper)" default="stp_device_name_tip"/>
   <!-- Add planning context launch file -->
   <include file="$(find sawyer_moveit_config)/launch/planning_context.launch">
     <arg name="load_robot_description" value="$(arg load_robot_description)"/>
     <arg name="electric_gripper" value="$(arg electric_gripper)"/>
+    <arg name="clicksmart_gripper" value="$(arg clicksmart_gripper)"/>
     <arg name="tip_name" value="$(arg tip_name)"/>
     <arg name="controller_box" value="$(arg controller_box)"/>
   </include>
