@@ -7,8 +7,8 @@
 # sawyer_moveit.launch file.
 
 # get clicksmart id
-echo $(rostopic list | grep state | grep stp | cut -d'/' -f 4)
-device_name="$(rostopic list | grep state | grep stp | cut -d'/' -f 4)";
+echo $(rostopic list | grep config | grep stp | cut -d'/' -f 4)
+device_name="$(rostopic list | grep config | grep stp | cut -d'/' -f 4)";
 echo ${device_name}
 
 # launch moveit
