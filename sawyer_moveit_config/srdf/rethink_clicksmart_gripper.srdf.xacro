@@ -6,8 +6,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="rethink_clicksmart_gripper">
     <xacro:macro name="rethink_clicksmart_gripper" params="side stp_device_name">
     <disable_collisions link1="${side}_l6" link2="${stp_device_name}_base" reason="Adjacent" />
+    <disable_collisions link1="${side}_hand" link2="${stp_device_name}_base" reason="Adjacent" />
     <disable_collisions link1="${stp_device_name}_base" link2="${stp_device_name}_tip" reason="Adjacent" />
     <disable_collisions link1="${stp_device_name}_tip" link2="${side}_hand" reason="Adjacent" />
-    <disable_collisions link1="${side}_hand" link2="${stp_device_name}_base" reason="Adjacent" />
+    <disable_collisions link1="${side}_l6" link2="${stp_device_name}_tip" reason="Adjacent" />
     </xacro:macro>
 </robot>
