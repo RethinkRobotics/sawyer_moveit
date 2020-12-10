@@ -9,7 +9,7 @@
   <arg name="debug" default="false" />
 
   <!-- By default we do not overwrite the URDF. Change the following to true to change the default behavior -->
-  <arg name="load_robot_description" default="false"/>
+  <arg name="load_robot_description" default="true"/>
   <!-- Add controller box collision shape to check for link collisions if set to true-->
   <arg name="controller_box" default="true"/>
   <!-- Left and electric gripper arg. Set to true to check for collisions for their links -->

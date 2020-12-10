@@ -65,6 +65,7 @@ right_arm:
     - TRRTkConfigDefault
     - PRMkConfigDefault
     - PRMstarkConfigDefault
+  longest_valid_segment_fraction: 0.005
 head:
   planner_configs:
     - SBLkConfigDefault
