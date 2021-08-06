@@ -13,4 +13,4 @@
 - git:
     local-name: sawyer_moveit
     uri: https://github.com/RethinkRobotics/sawyer_moveit.git
-    version: master
+    version: melodic_devel
